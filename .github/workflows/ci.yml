@@ -18,8 +18,15 @@ jobs:
 
       - name: get last commit message
         id: get_commit_message
-        run: echo "::set-output name=message::$(git log -1 --pretty=%B)"
-      
+        run: |
+          echo "Retrieving the last commit message"
+          LAST_COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+          echo "Last commit message: $LAST_COMMIT_MESSAGE"
+          echo "::set-output name=message::$LAST_COMMIT_MESSAGE"
+
+      - name: debug commit message
+        run: echo "Commit message is: ${{ steps.get_commit_message.outputs.message }}"
+
       - name: setup node.js
         if: ${{ steps.get_commit_message.outputs.message =~ /Publish version/i }}
         uses: actions/setup-node@v3
