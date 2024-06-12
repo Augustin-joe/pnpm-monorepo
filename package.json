@@ -27,8 +27,5 @@
     "overrides": {
       "@types/eslint": "^7.0.0"
     }
-  },
-  "changesets": {
-    "linked": [["*"]]
   }
 }
