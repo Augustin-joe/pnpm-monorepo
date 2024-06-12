@@ -65,6 +65,8 @@
     "version": 2,
     "type": "addon",
     "main": "addon-main.cjs",
-    "app-js": {}
+    "app-js": {
+      "./components/datetime.js": "./dist/_app_/components/datetime.js"
+    }
   }
 }
