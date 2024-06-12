@@ -26,7 +26,7 @@ jobs:
       - name: install dependencies
         run: pnpm install
       - name: create and publish versions
-        run: pnpm -r publish
+        run: pnpm -r publish --no-git-checks
 
 
 
