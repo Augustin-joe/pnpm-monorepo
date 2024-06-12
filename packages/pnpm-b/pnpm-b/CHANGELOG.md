@@ -1,5 +1,11 @@
 # pnpm-b
 
+## 0.1.3
+
+### Patch Changes
+
+- fac41a1: versioned
+
 ## 0.1.2
 
 ### Patch Changes
