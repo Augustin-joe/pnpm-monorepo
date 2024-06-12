@@ -21,9 +21,14 @@ jobs:
           node-version: 21
       - name: install pnpm
         run: npm i pnpm@latest -g
-      - name: Setup npmrc
-        run: echo "hello" > .npmrc
       - name: install dependencies
         run: pnpm install
+      - name: get last commit message
+        id: get_commit_message
+        run: echo "::set-output name=message::$(git log -1 --pretty=%B)"
+      - name: npm login
+        if: ${{ steps.get_commit_message.outputs.message =~ /Publish version/i }}
+        run: pnpm login
       - name: create and publish versions
-        run: pnpm -r publish
+        if: ${{ steps.get_commit_message.outputs.message =~ /Publish version/i }}
+        run: pnpm -r publish --no-git-checks
