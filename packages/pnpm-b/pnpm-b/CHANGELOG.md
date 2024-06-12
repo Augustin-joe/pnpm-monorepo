@@ -1,5 +1,11 @@
 # pnpm-b
 
+## 0.1.5
+
+### Patch Changes
+
+- 6bf170b: using ci.yml
+
 ## 0.1.4
 
 ### Patch Changes
