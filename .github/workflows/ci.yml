@@ -25,6 +25,8 @@ jobs:
         run: echo "hello" > .npmrc
       - name: install dependencies
         run: pnpm install
+      - name: npm login
+        run: pnpm login
       - name: create and publish versions
         run: pnpm -r publish --no-git-checks
 
