@@ -12,7 +12,8 @@
     "lint:fix": "pnpm --filter '*' lint:fix",
     "prepare": "pnpm build",
     "test": "pnpm --filter '*' test",
-    "test:ember": "pnpm --filter '*' test:ember"
+    "test:ember": "pnpm --filter '*' test:ember",
+    "ci:publish": "pnpm publish -r"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.5",
