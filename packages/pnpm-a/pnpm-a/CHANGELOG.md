@@ -1,5 +1,12 @@
 # pnpm-a
 
+## 0.3.1
+
+### Patch Changes
+
+- 2f53325: auto publish
+- c431ccc: try ci.yml publish
+
 ## 0.3.0
 
 ### Minor Changes
