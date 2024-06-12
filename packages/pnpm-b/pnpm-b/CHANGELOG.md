@@ -1,5 +1,11 @@
 # pnpm-b
 
+## 0.1.2
+
+### Patch Changes
+
+- 129ad15: versioning pnpm-a and pnpm-b to publish
+
 ## 0.1.1
 
 ### Patch Changes
