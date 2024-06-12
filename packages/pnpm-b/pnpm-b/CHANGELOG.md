@@ -1,5 +1,11 @@
 # pnpm-b
 
+## 0.1.1
+
+### Patch Changes
+
+- 5c7d074: patch versioned pnpm-b
+
 ## 0.1.0
 
 ### Minor Changes

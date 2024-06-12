@@ -7,7 +7,5 @@ export default class FlashMessagesComponent extends Component {
   constructor() {
     super(...arguments);
     this.flashMessages.success('Data is fetched successfully');
-    console.log("flash message");
-    console.log("Data is fetched successfully");
   }
 }
